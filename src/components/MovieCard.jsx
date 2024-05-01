@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 
 const imagesURL = import.meta.env.VITE_IMG;
 
+// eslint-disable-next-line react/prop-types
 const MovieCard = ({ movie, showLink = true }) => {
   return (
     <div className="movie-card">
