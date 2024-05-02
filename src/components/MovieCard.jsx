@@ -4,7 +4,6 @@ import { FaStar } from "react-icons/fa";
 
 const imagesURL = import.meta.env.VITE_IMG;
 
-// eslint-disable-next-line react/prop-types
 const MovieCard = ({ movie, showLink = true }) => {
   return (
     <div className="movie-card">
@@ -13,7 +12,7 @@ const MovieCard = ({ movie, showLink = true }) => {
       <p>
         <FaStar /> {movie.vote_average}
       </p>
-      {showLink && <Link to={`/movie/${movie.id}`}>Details</Link>}
+      {showLink && <Link to={`/movie/${movie.id}`}>Detalhes</Link>}
     </div>
   );
 };
